@@ -1,0 +1,43 @@
+.hero{
+    position: relative; /* Ensure child elements are positioned relative to this container */
+    z-index: 1; /* Make sure the hero content appears above the background */
+    margin: 0 120px;
+    margin-top: 270px;
+    height: 100vh; /* Match the height of the background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hero-text{
+    color: #ffffff;
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 100px;
+}
+.hero-dot-play{
+    margin-top: 120px;
+    display: flex;
+  justify-content: space-between;
+}
+.hero-dots{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    list-style: none;
+}
+.hero-dot{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 7.5px;
+    cursor: pointer;
+}
+.hero-dot.orange{
+background: orangered;
+}
+.herp-play{
+    display: flex;
+gap: 30px;
+align-items: center;
+}

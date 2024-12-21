@@ -1,0 +1,27 @@
+
+    .background {
+        height: 150vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        overflow: hidden;
+        z-index: -1; /* Background should be behind */
+    
+        /* Add an overlay effect */
+        /* background-color: rgba(0, 0, 0, 0.4); /* Transparent dark overlay */
+        /* mix-blend-mode: multiply; Blend the dark color with the image */
+        /* opacity: 0.8; Slight transparency for the image itself */ 
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+.fade-in{
+    animation: fadeIn 500ms ease-in-out;
+}
